@@ -75,7 +75,9 @@ print('find method using for: ', res)
 # ---- End Using for ----
 #------------------------------------------------------
 # ---- Functional Way ----
-def find(string, target, start=0, end=len(string)):
+def find(string, target, start=0, end=None):
+    if end == None:
+        end = len(string)
     find_index = ''
     for index in range(start, end):
         if string[index] == target:
@@ -88,12 +90,9 @@ def find(string, target, start=0, end=len(string)):
 a = find('alireza', 'a')
 b = find('alireza', 'a', 1, 4)
 c = find('alireza', 'a', 1, 7)
-
 print(a)
 print(b)
 print(c)
-
-
 # ---- End Functional Way ----
 #------------------------------------------------------
 
