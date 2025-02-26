@@ -1,6 +1,7 @@
 # ---- Upper Method ----
 # Return a Copy of The String Converted To
 # ex: 'alireza'.upper() --> 'ALIREZA'
+# ----
 string = input('Enter Your String: ')
 
 lower_ref = 'abcdefghijklmnopqrstuvwxyz'
@@ -23,6 +24,8 @@ while i < len(string):
         result += string[i]
         i += 1
 print('using while: ', result)
+# ---- End Using While ----
+#------------------------------------------------------
 # ---- Sequential Way ----
 # ---- Using for ----
 res = ''      
@@ -34,9 +37,12 @@ for index in range(len(string)):
     else:
         res = res + string[index]
 print('using for: ', res)
-                        
+# ---- End Using for ----
+#------------------------------------------------------
 # ---- Functional Way ----
 def personal_upper(str1: str) -> str:
+    if not isinstance(str1, str):
+        return
     lower_ref = 'abcdefghijklmnopqrstuvwxyz'
     upper_ref = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
     upper_result = ''
@@ -53,7 +59,8 @@ def personal_upper(str1: str) -> str:
 a = personal_upper('aLiReZa13!?')
 print(a)
 
-
+# ---- End Functional Way ----
+#------------------------------------------------------
 
 
 
