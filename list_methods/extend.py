@@ -13,18 +13,24 @@ result = []
 ref = '0123456789'
 while True:
     a = input('Enter Value for list One: ')
-    if a in ref:
-        a = int(a)
     if a == 'quit':
         break
+    if a in ref:
+        try:
+            a = int(a)
+        except:
+            pass
     lst = lst + [a]
 
 while True:
     b = input('Enter value for list Two: ')
-    if b in ref:
-        b = int(b)
     if b == 'quit':
         break
+    if b in ref:
+        try:
+            b = int(b)
+        except:
+            pass
     lst1 = lst1 + [b]
 
 result = lst + lst1
