@@ -1,4 +1,4 @@
-# ---- setdefault Method ----
+# ---- count Method ----
 # ex: data = (1, 2, 3, 1, 4, 1)
 # ex: data.count(1) --> 3
 # ----
