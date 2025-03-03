@@ -5,12 +5,12 @@
 #------------------------------------------------------
 # ---- Functional Way ----
 
-def index(set_, value, start=0, stop=None):
+def index(tuple_, value, start=0, stop=None):
     idx = None
     if stop == None:
-        stop = len(set_)
+        stop = len(tuple_)
     for index in range(start, stop):
-        if set_[index] == value:
+        if tuple_[index] == value:
             idx = index
             break
     return idx

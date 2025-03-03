@@ -5,9 +5,9 @@
 #------------------------------------------------------
 # ---- Functional Way ----
 
-def count(set_, value):
+def count(tuple_, value):
     counter = 0
-    for elem in set_:
+    for elem in tuple_:
         if elem == value:
             counter += 1
     return counter
