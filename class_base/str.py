@@ -57,7 +57,7 @@ class StringModifiers:
         if stop == None:
             stop = len(self.string)
         for idx in range(start, stop - target_len + 1):
-            if self.string[idx:idx+target_len] == target:
+            if self.string[idx:idx + target_len] == target:
                 index = idx
                 break
         return index
@@ -68,7 +68,7 @@ class StringModifiers:
         if stop == None:
             stop = len(self.string)
         for index in range(start, stop - target_len + 1):
-            if self.string[index:index+target_len] == target:
+            if self.string[index:index + target_len] == target:
                 counter = counter + 1
         return counter
 
@@ -78,7 +78,7 @@ class StringModifiers:
         if stop == None:
             stop = len(self.string)
         for idx in range(start, stop - target_len + 1):
-            if self.string[idx:idx+target_len] == target:
+            if self.string[idx:idx + target_len] == target:
                 index = idx
                 break
         return index
@@ -89,11 +89,11 @@ class StringModifiers:
         limit_counter = 0
         i = 0
         while i < len(self.string):
-            if self.string[i:i+old_len] == old and limit_counter < count:
+            if self.string[i:i + old_len] == old and limit_counter < count:
                 result = result + new
                 i = i + old_len
                 limit_counter += 1
-            elif self.string[i:i+old_len] == old and count == -1:
+            elif self.string[i:i + old_len] == old and count == -1:
                 result = result + new
                 i = i + old_len
             else:
@@ -112,7 +112,7 @@ class StringModifiers:
             else:
                 start = idx_start
                 break
-        for idx_end in range(len(self.string) -1, -1, -1):
+        for idx_end in range(len(self.string) - 1, -1, -1):
             if self.string[idx_end] == chars:
                 continue
             else:
@@ -136,27 +136,9 @@ class StringModifiers:
                     if self.string[i] == self.upper_ref[index2]:
                         result = result + self.lower_ref[index2]
                         i = i + 1
-                   
+
             else:
                 result = result + self.string[i]
                 i = i + 1
 
         return result
-        
-                
-                
-        
-            
-                
-        
-            
-
-
-
-
-        
-        
-            
-        
-                        
-                

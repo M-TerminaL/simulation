@@ -1,4 +1,3 @@
-import sys
 # ---- sum ----
 # ex: lst = [1, 2, 3, 4, 5, 6]
 # ex: sum(lst) --> 21
@@ -17,7 +16,7 @@ while True:
         try:
             a = int(a)
         except:
-            pass    
+            pass
     lst = lst + [a]
 
 i = 0
@@ -34,8 +33,9 @@ for index in range(len(lst)):
     sum__ += lst[index]
 print('sum using for: ', sum__)
 
+
 # ---- End Using For ----
-#------------------------------------------------------
+# ------------------------------------------------------
 # ---- Functional Way ----
 
 def personal_sum(lst):
@@ -43,16 +43,10 @@ def personal_sum(lst):
     for idx in range(len(lst)):
         sum_ += lst[idx]
     return sum_
+
+
 aa = personal_sum([1, 2, 3, 4, 5])
 print(aa)
 
 # ---- End Functional Way ----
-#------------------------------------------------------
-
-
-
-
-
-
-
-        
+# ------------------------------------------------------

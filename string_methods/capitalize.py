@@ -9,13 +9,13 @@ lower_ref = 'abcdefghijklmnopqrstuvwxyz'
 result = ''
 
 if string[0] in lower_ref:
-        j = 0
-        while j < len(lower_ref):
-            if string[0] == lower_ref[j]:
-                result = result + upper_ref[j]
-                break
-            else:
-                j = j + 1
+    j = 0
+    while j < len(lower_ref):
+        if string[0] == lower_ref[j]:
+            result = result + upper_ref[j]
+            break
+        else:
+            j = j + 1
 else:
     result = result + string[0]
 
@@ -35,7 +35,7 @@ while i < len(string):
         i = i + 1
 print('capitalize method using while: ', result)
 # ---- End Using While ----
-#------------------------------------------------------
+# ------------------------------------------------------
 # ---- Sequential Way ----
 # ---- Using for ----
 res = ''
@@ -46,7 +46,7 @@ if string[0] in lower_ref:
             break
 else:
     res = res + string[0]
-    
+
 for i in range(1, len(string)):
     if string[i] in upper_ref:
         for j in range(len(upper_ref)):
@@ -56,9 +56,11 @@ for i in range(1, len(string)):
     else:
         res = res + string[i]
 print('capitalize method using for: ', res)
+
+
 # ----
 # ---- End Using for ----
-#------------------------------------------------------
+# ------------------------------------------------------
 # ---- Functional Way ----
 def capitalize(string: str) -> str:
     upper_ref = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
@@ -73,7 +75,7 @@ def capitalize(string: str) -> str:
                 break
     else:
         res = res + string[0]
-    
+
     for i in range(1, len(string)):
         if string[i] in upper_ref:
             for j in range(len(upper_ref)):
@@ -81,20 +83,12 @@ def capitalize(string: str) -> str:
                     res = res + lower_ref[j]
                     break
         else:
-            res = res + string[i]   
+            res = res + string[i]
     return res
+
 
 a = capitalize('alireZa BabaEi')
 print(a)
 
-
 # ---- End Functional Way ----
-#------------------------------------------------------
-
-
-
-
-
-
-
-        
+# ------------------------------------------------------

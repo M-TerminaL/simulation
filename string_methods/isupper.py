@@ -22,7 +22,7 @@ while i < len(string):
         break
 print('isupper method using while', result)
 # ---- End Using While ----
-#------------------------------------------------------
+# ------------------------------------------------------
 # ---- Sequential Way ----
 # ---- Using for ----
 flag = 1
@@ -33,9 +33,11 @@ for char in string:
         flag = 0
         break
 print('isupper method using for', bool(flag))
+
+
 # ----
 # ---- End Using for ----
-#------------------------------------------------------
+# ------------------------------------------------------
 # ---- Functional Way ----
 def isupper(string: str) -> bool:
     # Type Checking
@@ -54,6 +56,7 @@ def isupper(string: str) -> bool:
             break
     return flag
 
+
 a = isupper('ALIREZA')
 b = isupper('ALIREZA PYTHON 786')
 c = isupper('ALiREZA')
@@ -62,12 +65,4 @@ print(a)
 print(b)
 print(c)
 # ---- End Functional Way ----
-#------------------------------------------------------
-
-
-
-
-
-
-
-        
+# ------------------------------------------------------

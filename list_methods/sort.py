@@ -6,7 +6,7 @@
 # ---- using while ----
 
 # make list with input loop
-lst = []   
+lst = []
 while True:
     data = float(input("Enter the elements of the list(press 000 to make list): "))
     if data == 000:
@@ -15,26 +15,29 @@ while True:
 # ---- End Using While ----
 # ---- Using For -----
 for i in range(len(lst)):
-    for j in range(i+1, len(lst)):
+    for j in range(i + 1, len(lst)):
         if lst[j] < lst[i]:
             lst[j], lst[i] = lst[i], lst[j]
 print('sort method using for: ', lst)
+
+
 # ---- End Using For ----
-#------------------------------------------------------
+# ------------------------------------------------------
 # ---- Functional Way ----
 
 def sort(lst, reverse=False):
     if reverse == False:
         for i in range(len(lst)):
-            for j in range(i+1, len(lst)):
+            for j in range(i + 1, len(lst)):
                 if lst[j] < lst[i]:
                     lst[j], lst[i] = lst[i], lst[j]
     elif reverse == True:
         for i in range(len(lst)):
-            for j in range(i+1, len(lst)):
+            for j in range(i + 1, len(lst)):
                 if lst[j] > lst[i]:
                     lst[j], lst[i] = lst[i], lst[j]
     return lst
+
 
 aa = sort([43, 11, 56, 3, 87, 45, 34, 67, 90, 12])
 bb = sort([43, 11, 56, 3, 87, 45, 34, 67, 90, 12], reverse=True)
@@ -43,12 +46,4 @@ print(aa)
 print(bb)
 
 # ---- End Functional Way ----
-#------------------------------------------------------
-
-
-
-
-
-
-
-        
+# ------------------------------------------------------

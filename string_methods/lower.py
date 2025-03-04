@@ -25,20 +25,22 @@ while i < len(string):
         i += 1
 print('using while: ', result)
 # ---- End Using While ----
-#------------------------------------------------------
+# ------------------------------------------------------
 # ---- Sequential Way ----
 # ---- Using for ----
-res = ''      
+res = ''
 for index in range(len(string)):
     if string[index] in upper_ref:
         for upper_index in range(len(upper_ref)):
-            if string[index] ==  upper_ref[upper_index]:
+            if string[index] == upper_ref[upper_index]:
                 res = res + lower_ref[upper_index]
     else:
         res = res + string[index]
 print('using for: ', res)
+
+
 # ---- End Using for ----
-#------------------------------------------------------
+# ------------------------------------------------------
 # ---- Functional Way ----
 def personal_lower(str1: str) -> str:
     if not isinstance(str1, str):
@@ -54,18 +56,10 @@ def personal_lower(str1: str) -> str:
         else:
             lower_result += element
     return lower_result
-                
+
 
 a = personal_lower('AlIRezA432GFsdvJFB')
 print(a)
 
 # ---- End Functional Way ----
-#------------------------------------------------------
-
-
-
-
-
-
-
-        
+# ------------------------------------------------------

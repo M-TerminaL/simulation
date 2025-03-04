@@ -1,4 +1,5 @@
 import sys
+
 # ---- index Method ----
 # ex: lst = [1, 2, 3, 4, 5, 6]
 # ex: lst.index(value, start(def=0), stop(def=len(lst)))
@@ -18,13 +19,12 @@ while True:
         try:
             a = int(a)
         except:
-            pass    
+            pass
     lst = lst + [a]
 
 value = input('Value: ')
 start = input('Start: (def=0) ')
 stop = input('Stop: (def=len(lst)) ')
-
 
 if value in ref:
     try:
@@ -48,7 +48,7 @@ else:
     except ValueError:
         print('Value Error')
         sys.exit(1)
-#main
+# main
 result = None
 while start < stop:
     if lst[start] == value:
@@ -70,10 +70,12 @@ for index in range(start, stop):
         break
 if idx == None:
     idx = 'Not Found'
-    
+
 print('index method using for: ', idx)
+
+
 # ---- End Using For ----
-#------------------------------------------------------
+# ------------------------------------------------------
 # ---- Functional Way ----
 def index(lst, value, start=0, stop=None):
     idx = None
@@ -86,19 +88,12 @@ def index(lst, value, start=0, stop=None):
     if idx == None:
         idx = 'Not Found'
     return idx
-    
+
+
 aa = index([1, 2, 3, 1, 4, 4], 1, start=2, stop=5)
 bb = index([1, 2, 3, 1, 4], 2)
 
 print(aa)
 print(bb)
 # ---- End Functional Way ----
-#------------------------------------------------------
-
-
-
-
-
-
-
-        
+# ------------------------------------------------------

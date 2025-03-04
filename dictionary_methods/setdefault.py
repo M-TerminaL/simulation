@@ -4,7 +4,7 @@
 # ex: data.setdefault('d', 4) --> {'a': 1, 'b': 2, 'c': 3, 'd': 4}
 # ex: data.setdefault('b', 6) --> {'a': 1, 'b': 2, 'c': 3}
 # ----
-#------------------------------------------------------
+# ------------------------------------------------------
 # ---- Functional Way ----
 
 def setdefault(dictionary, key, default=None):
@@ -16,7 +16,7 @@ def setdefault(dictionary, key, default=None):
     for k in dictionary:
         if k == key:
             return dictionary[key]
-        
+
 
 a = setdefault({'a': 1, 'b': 2, 'c': 3}, 'b')
 b = setdefault({'a': 1, 'b': 2, 'c': 3}, 'b', 12)
@@ -29,12 +29,4 @@ print(c)
 print(d)
 
 # ---- End Functional Way ----
-#------------------------------------------------------
-
-
-
-
-
-
-
-        
+# ------------------------------------------------------

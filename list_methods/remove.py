@@ -17,9 +17,9 @@ while True:
         try:
             a = int(a)
         except:
-            pass    
+            pass
     lst = lst + [a]
-    
+
 value = input('Enter Value: ')
 if value in ref:
     try:
@@ -34,10 +34,10 @@ while i < len(lst):
         break
     else:
         i = i + 1
-        
+
 print('remove method of list using while: ', lst)
 # ---- End Using While ----
-#------------------------------------------------------
+# ------------------------------------------------------
 # ---- Sequential Way ----
 # ---- Using for ----
 lst1 = []
@@ -50,9 +50,9 @@ while True:
         try:
             b = int(b)
         except:
-            pass    
+            pass
     lst1 = lst1 + [b]
-    
+
 value1 = input('Enter Value: ')
 
 if value1 in ref:
@@ -66,9 +66,11 @@ for index in range(len(lst1)):
         del lst1[index]
         break
 print('remove method using for: ', lst1)
+
+
 # ----
 # ---- End Using for ----
-#------------------------------------------------------
+# ------------------------------------------------------
 # ---- Functional Way ----
 def remove(lst, value):
     for idx in range(len(lst)):
@@ -76,6 +78,7 @@ def remove(lst, value):
             del lst[idx]
             break
     return lst
+
 
 aa = remove([1, 'a', 1, 'b', 1, 'c'], 1)
 bb = remove([1, 2, 3, 4, 2, 5, 2], 2)
@@ -86,12 +89,4 @@ print(bb)
 print(cc)
 
 # ---- End Functional Way ----
-#------------------------------------------------------
-
-
-
-
-
-
-
-        
+# ------------------------------------------------------

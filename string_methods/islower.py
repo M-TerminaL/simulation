@@ -22,7 +22,7 @@ while i < len(string):
         break
 print('isupper method using while', result)
 # ---- End Using While ----
-#------------------------------------------------------
+# ------------------------------------------------------
 # ---- Sequential Way ----
 # ---- Using for ----
 flag = 1
@@ -33,9 +33,11 @@ for char in string:
         flag = 0
         break
 print('isupper method using for', bool(flag))
+
+
 # ----
 # ---- End Using for ----
-#------------------------------------------------------
+# ------------------------------------------------------
 # ---- Functional Way ----
 def islower(string: str) -> bool:
     # Type Checking
@@ -54,6 +56,7 @@ def islower(string: str) -> bool:
             break
     return flag
 
+
 a = islower('alireza')
 b = islower('alireza python 786')
 c = islower('aliReza')
@@ -62,12 +65,4 @@ print(a)
 print(b)
 print(c)
 # ---- End Functional Way ----
-#------------------------------------------------------
-
-
-
-
-
-
-
-        
+# ------------------------------------------------------

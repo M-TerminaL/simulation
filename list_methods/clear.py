@@ -15,36 +15,28 @@ while True:
         try:
             a = int(a)
         except:
-            pass    
+            pass
     lst = lst + [a]
-
-
 
 del lst[:len(lst)]
 
-        
 print('pop method of list using while: ', lst)
+
+
 # ---- End Using While ----
-#------------------------------------------------------
+# ------------------------------------------------------
 # ---- Functional Way ----
 
 def clear(lst: list):
     del lst[:len(lst)]
     return lst
 
-aa = clear([1,2,3])
+
+aa = clear([1, 2, 3])
 bb = clear(['a', 'b', 'c'])
 
 print(aa)
 print(bb)
 
 # ---- End Functional Way ----
-#------------------------------------------------------
-
-
-
-
-
-
-
-        
+# ------------------------------------------------------

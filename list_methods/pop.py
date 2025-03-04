@@ -1,4 +1,5 @@
 import sys
+
 # ---- pop Method ----
 # ex: lst = [1, 2, 3, 4, 5, 6]
 # ex: lst.pop(index=-1)
@@ -18,9 +19,8 @@ while True:
         try:
             a = int(a)
         except:
-            pass    
+            pass
     lst = lst + [a]
-
 
 index = input('index: (def=-1) ')
 
@@ -35,29 +35,23 @@ else:
 
 del lst[index]
 
-        
 print('pop method of list using while: ', lst)
+
+
 # ---- End Using While ----
-#------------------------------------------------------
+# ------------------------------------------------------
 # ---- Functional Way ----
 
 def pop(lst, index=-1):
     del lst[index]
     return lst
 
-aa = pop([1,2,3])
+
+aa = pop([1, 2, 3])
 bb = pop(['a', 'b', 'c'], 0)
 
 print(aa)
 print(bb)
 
 # ---- End Functional Way ----
-#------------------------------------------------------
-
-
-
-
-
-
-
-        
+# ------------------------------------------------------

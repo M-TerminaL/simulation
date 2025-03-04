@@ -35,13 +35,16 @@ while True:
 
 result = lst + lst1
 print('extend method using while: ', result)
+
+
 # ---- End Using While ----
-#------------------------------------------------------
+# ------------------------------------------------------
 # ---- Functional Way ----
 def extend(lst, lst1):
     res = []
     res = lst + list(lst1)
     return res
+
 
 aa = extend([1, 2, 3], [4, 5, 6])
 bb = extend(['a', 'b', 'c'], 'alireza')
@@ -50,12 +53,4 @@ print(aa)
 print(bb)
 
 # ---- End Functional Way ----
-#------------------------------------------------------
-
-
-
-
-
-
-
-        
+# ------------------------------------------------------

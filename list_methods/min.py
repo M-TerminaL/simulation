@@ -6,13 +6,13 @@
 # ---- using while ----
 
 # make list with input loop
-lst = []   
+lst = []
 while True:
     data = float(input("Enter the elements of the list(press 000 to make list): "))
     if data == 000:
         break
     lst = lst + [data]
-        
+
 i = 0
 min_ = lst[0]
 
@@ -33,8 +33,9 @@ for elem in lst:
         min_elem = elem
 print('min using for: ', min_elem)
 
+
 # ---- End Using For ----
-#------------------------------------------------------
+# ------------------------------------------------------
 # ---- Functional Way ----
 
 def personal_min(lst):
@@ -44,8 +45,10 @@ def personal_min(lst):
             min_ = element
     return min_
 
+
 aa = personal_min([11, 14, 6, 98, 34])
 print(aa)
+
 
 def my_min(*args):
     min_ = args[0]
@@ -53,16 +56,10 @@ def my_min(*args):
         if element < min_:
             min_ = element
     return min_
+
+
 bb = my_min(11, 14, 7, 99, 33)
 print(bb)
 
 # ---- End Functional Way ----
-#------------------------------------------------------
-
-
-
-
-
-
-
-        
+# ------------------------------------------------------
