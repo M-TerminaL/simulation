@@ -29,7 +29,7 @@ class ListModifier:
             if self.lst[index] == element:
                 del self.lst[index]
                 break
-            
+
     def count(self, value):
         counter = 0
         for char in self.lst:
@@ -53,27 +53,11 @@ class ListModifier:
     def sort(self, reverse=False):
         if reverse is False:
             for i in range(len(self.lst)):
-                for j in range(i+1, len(self.lst)):
+                for j in range(i + 1, len(self.lst)):
                     if self.lst[j] < self.lst[i]:
                         self.lst[j], self.lst[i] = self.lst[i], self.lst[j]
         if reverse is True:
             for i in range(len(self.lst)):
-                for j in range(i+1, len(self.lst)):
+                for j in range(i + 1, len(self.lst)):
                     if self.lst[j] > self.lst[i]:
                         self.lst[j], self.lst[i] = self.lst[i], self.lst[j]
-                         
-                        
-
-    
-                
-
-    
-
-    
-            
-                
-        
-        
-
-        
-        

@@ -8,14 +8,11 @@
 # ---- Functional Way ----
 
 def setdefault(dictionary, key, default=None):
-    if key not in dictionary and default is not None:
+    if key in dictionary:
+        return dictionary[key]
+    else:
         dictionary[key] = default
         return dictionary
-    if key not in dictionary and default == None:
-        return f'key : "{key}" not found'
-    for k in dictionary:
-        if k == key:
-            return dictionary[key]
 
 
 a = setdefault({'a': 1, 'b': 2, 'c': 3}, 'b')

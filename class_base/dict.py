@@ -22,7 +22,7 @@ class DictModifier:
     def get(self, key, default=None):
         result = 'Not Found'
         try:
-           result = self.dictionary[key]
+            result = self.dictionary[key]
         except:
             if default is None:
                 return result
@@ -50,6 +50,3 @@ class DictModifier:
             return self.dictionary[key]
         else:
             self.dictionary[key] = default
-            
-
-    

@@ -1,6 +1,6 @@
 # --- Class Str ---
 
-class StringModifiers:
+class StringModifier:
     def __init__(self, string):
         self.string = string
         self.lower_ref = 'abcdefghijklmnopqrstuvwxyz'

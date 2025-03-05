@@ -14,7 +14,7 @@ def pop(dictionary, key):
 
 
 a = pop({'a': 1, 'b': 2, 'c': 3}, 'b')
-b = pop({'b': 1, 'b': 2, 'c': 3}, 'z')
+b = pop({'a': 1, 'b': 2, 'c': 3}, 'z')
 
 print(a)
 print(b)
